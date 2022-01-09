@@ -1,0 +1,395 @@
+:root {
+    --lightblue: rgb(121,203,205);
+    --lightgray:rgb(230,221,235);
+    --yellow:rgb(248,239,148);
+    --cayan:rgb(57,63,70);
+    --lightorange:rgb(215,179,88);
+    --sky:rgb(217,237,235);
+    --darkcayan:rgb(114,145,147);;
+    --cyan2:rgb(61,126,148);
+   
+}
+* {
+  box-sizing: border-box;
+}
+
+body { /*apply specific body attributes */
+  background-image: url('../../assets/images/new.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  cursor: -webkit-grab; cursor: grab; 
+   display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    width: 100%;
+
+}
+
+  .mee{ /* using this class to apply specific attribute for 2 letter of my name*/
+      color:  var(--lightgray);
+      font-family: fantasy;
+  }
+  
+  
+  header {  /* header attributes*/
+    font-family: "Sofia", sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    color: #fff;
+  }
+  h1{
+   font-size: 33px;
+   color:black;
+
+  }
+  /*change nav attributes*/
+  nav ul {
+
+      font-size: 22px;
+      background-color: var(--darkcayan);
+      margin: 30px;
+    display: flex;
+    justify-content:space-between;
+    min-width: 300px;
+  }
+ 
+  ul li a{
+    display: inline-block;
+    color:whitesmoke;
+    display: block;
+  padding: 8px 25px;
+  color: #333;
+  text-decoration: none;
+  }
+  
+  nav a {padding:10px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .dropdown{ 
+    position: relative;
+  display: inline-block;
+  color: white;
+
+  }
+.dropdown-menu{
+  font-family: serif;
+  color:black;
+
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 4px 8px 16px 4px var(--lightgray);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-menu{ /* show drop down menu when i hover the mouse up to portifiilio section*/
+  display: block;
+color:black;
+
+  
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+  background: #f2f2f2;
+}
+ul li{
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+ nav ul li:first-child [data-descr]{
+  position: relative;
+  display: inline-block;
+
+}
+.click [data-descr]:hover::after,
+.click [data-descr]:focus::after {
+  content: attr(data-descr);
+  font-family: serif;
+color:black;
+  position: absolute;
+  right:40px;
+  min-width: 160px;
+  box-shadow: 4px 8px 16px 4px var(--lightgray);
+  background-color: var(--yellow);
+  margin: 50px 16px;
+  padding:20px;
+  z-index: 1;
+ 
+} 
+
+  
+/* change color of the nav bar sections when i hover it */
+ul li a:hover{
+color:var(--lightblue);
+  }
+  a:active {
+    color: var(--lightblue);
+  }
+  /*about me section*/
+  .aboutsec{
+    color:var(--lightgray);
+    width:100%;
+    background-image: url('../images/grayy.jpg');
+    margin-top: 50px;
+    border-radius: 20%;
+    box-shadow: 5px 10px 5px 10px var(--lightgray);
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .myinfo{
+    width:55%;
+  }
+  .nameesimg{
+    width:20%;
+  }
+  .mypic{
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    margin-top: 30px;
+  }
+  /*project section which contain the images and links to another websites*/
+ .myprojects{
+   display:flex;
+   flex-direction: row-reverse;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   width:100%;
+ }
+ .projectimage{
+   margin-top: 100px;
+   width:75%;
+   background-image: url('../images/grayy.jpg');
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+
+ }
+ .partimage{
+  margin-top: 100px;
+  width:23%;
+  background-image: url('../images/grayy.jpg');
+   
+ }
+ .imagecard{
+   border:1px solid var(--darkcayan);
+
+ }
+ .holder1{
+   margin-right: 30px;
+   margin-top: 40px;
+
+  }
+
+.holder2{
+  margin-top: 40px;
+  margin-left: 150px;
+}
+.holder3{
+  margin-top: 40px;
+}
+.holder4{
+  margin-top: 40px;
+  margin-left: 180px;
+
+
+}
+.big:hover{
+  transform: scale(1.3);
+  opacity: 0.7;
+
+}
+.box1{
+  margin-top:300px;
+  margin-left: 60px;
+}
+/*appointment form section attributes*/
+.booking{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:100%;
+  background-color: whitesmoke;
+  margin-top: 100px;
+}
+.booking1{
+  width:100%;
+  height:10%;
+  margin-left: 930px;
+
+}
+.booking2{
+  width:100%;
+  height:10%;
+  margin-left: 850px;
+
+}
+.booking3{
+  background-color: var(--darkcayan);
+  margin-left: 500px;
+  margin-top: 50px;
+}
+.booking4{
+width:100%;
+  height:100%;
+  
+}
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.landing-page {
+  
+  width: 882px;
+  margin: 100px auto 0;  
+}
+
+.landing-page *,
+.landing-page *:before,
+.landing-page *:after {
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; 
+}
+
+.landing-page .module {
+	border: 1px solid rgb(219, 219, 219);
+	border-radius: 4px;
+	float: left;
+	padding: 2em;
+	width: 48%;
+}
+
+.landing-page .module > *:last-child,
+.landing-page .module > *:last-child > *:last-child,
+.landing-page .module > *:last-child > *:last-child > *:last-child {
+	margin: 0;
+	padding: 0;
+}
+
+.landing-page .note {	
+	background-color: rgb(236, 248, 236);
+	border: 1px dashed;	
+	border-radius: 4px;	
+	color: rgb(115, 136, 96);
+	font-family: georgia;	
+	font-size: .9em;
+	font-style: italic;
+	margin: 20px auto;
+	padding: 2em;
+}
+
+.form-appointment {
+	padding: 2em;
+	background-color: rgb(239, 252, 239);
+	border-radius: 4px;
+	border: 1px solid rgb(130, 228, 130);
+	box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+	font-family: 'PT Sans', Arial, sans-serif;
+	margin: 20px auto;
+}
+/*text input attributes*/
+.form-appointment input[type=text],
+.form-appointment input[type=email],
+.form-appointment input[type=tel],
+.form-appointment textarea {	
+	border: 1px solid rgb(153, 202, 129);
+	border-radius: .2em;	
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 1.1em;
+	padding: .4em 1em;
+	margin: 0 0 .8em;
+	width: 100%;
+  box-shadow: 0 0 8px rgba(0,0,0,.08) inset;
+}
+
+.form-appointment input[type=text],
+.form-appointment input[type=email],
+.form-appointment input[type=tel],
+.form-appointment input[type=submit],
+.form-appointment textarea {	
+	-webkit-transition: all .2s ease-in-out;
+	   -moz-transition: all .2s ease-in-out;
+	        transition: all .2s ease-in-out;
+}
+/*when focusing on the text input the boc shadow will appears*/
+
+.form-appointment input[type=text]:active,
+.form-appointment input[type=text]:focus,
+.form-appointment input[type=email]:active,
+.form-appointment input[type=email]:focus,
+.form-appointment input[type=tel]:active,
+.form-appointment input[type=tel]:focus,
+.form-appointment textarea:active,
+.form-appointment textarea:focus {	
+  outline: 0;
+  box-shadow: 0 5px 6px black;
+}
+
+.form-appointment textarea {
+	height: 160px;
+}
+/*submit attributes*/
+.form-appointment input[type=submit] {
+	background-color: rgb(118, 207, 118);
+	border: 1px solid rgb(134, 189, 134);
+	border-radius: 4px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 1.4em;
+	padding: 10px 18px;
+}
+
+.form-appointment input[type=submit]:hover {
+	background-color: white;
+	color: rgb(118, 207, 118);
+}
+
+.form-appointment .wpcf7-list-item-label {
+	color: rgb(130, 178, 136);
+}
+
+span.wpcf7-list-item {
+	display: block;
+	margin-left: -.02em;
+}
+footer{
+  text-align: center;
+  background-image: url('../images/grayy.jpg');
+
+}
+
+@media screen and (max-width: 600px) {
+  .aboutsec {
+    width: 100%;
+  }
+  h1,.partimage{
+    display: none;
+  }
+  .projectimage{
+    flex-direction: column;
+    width:100%;
+  }
+ 
+  .landing-page{
+    flex-direction: row;
+
+    width: 100%;
+  }
+   
+
+}  
